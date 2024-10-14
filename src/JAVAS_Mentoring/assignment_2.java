@@ -13,12 +13,11 @@ public class assignment_2 {
 
         for (int i = 0; i < 7; i++) {
             for (int j = 0; j < cars.length; j++) {
-                Car currentCar = cars[j];
-                if (currentCar.getGas() >=5) {
-                    currentCar.move(5);
+                if (cars[j].getGas() >=5) {
+                    cars[j].move(5);
 
                 }else {
-                    currentCar.refuel(10);
+                    cars[j].refuel(10);
                 }
                 System.out.println();
             }
